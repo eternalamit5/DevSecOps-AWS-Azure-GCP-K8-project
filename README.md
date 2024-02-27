@@ -1,11 +1,11 @@
-# Deploy Netflix Clone on Cloud using Jenkins - DevSecOps Project!
+# Deploy an App on Cloud using Jenkins - DevSecOps Project!
 
 ### **Phase 1: Initial Setup and Deployment**
 
 **Step 1: Launch EC2 (Ubuntu 22.04):**
 
-- Provision an EC2 instance on AWS with Ubuntu 22.04.
-- Connect to the instance using SSH.
+- Begin by provisioning an EC2 instance on AWS with Ubuntu 22.04.
+- Utilize SSH to establish a connection with the newly created instance.
 
 **Step 2: Clone the Code:**
 
@@ -43,13 +43,13 @@ It will show an error cause you need API key
 
 **Step 4: Get the API Key:**
 
-- Open a web browser and navigate to TMDB (The Movie Database) website.
-- Click on "Login" and create an account.
-- Once logged in, go to your profile and select "Settings."
-- Click on "API" from the left-side panel.
-- Create a new API key by clicking "Create" and accepting the terms and conditions.
-- Provide the required basic details and click "Submit."
-- You will receive your TMDB API key.
+- Visit the TMDB (The Movie Database) website in your web browser.
+- Click on "Login" to create a new account.
+- After successfully logging in, navigate to your profile and select "Settings."
+- In the settings menu, choose "API" from the left-hand panel.
+- To generate a new API key, click on the "Create" button and accept the terms and conditions if prompted.
+- Fill in the necessary details as requested and click "Submit."
+- Your TMDB API key will be generated and provided to you.
 
 Now recreate the Docker image with your api key:
 

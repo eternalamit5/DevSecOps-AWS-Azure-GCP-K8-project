@@ -1,5 +1,8 @@
 # Deploy an App on Cloud using Jenkins - DevSecOps Project!
 
+![GitSecops](https://github.com/eternalamit5/GitSecOps-AWS-K8-project/assets/44448083/c8de49f4-7cb9-4ee7-a884-170fceeaf5d8)
+
+
 ### **Phase 1: Initial Setup and Deployment**
 
 **Step 1: Launch EC2 (Ubuntu 22.04):**

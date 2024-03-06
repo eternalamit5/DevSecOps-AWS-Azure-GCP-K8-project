@@ -5,22 +5,22 @@
 
 ### **Phase 1: Initial Setup and Deployment**
 
-**Step 1: Launch EC2 (Ubuntu 22.04):**
+**Step 1: Launch EC2/ Azure Virtual machine/ Google Compute engine (Ubuntu 22.04):**
 
-- Begin by provisioning an EC2 instance on AWS with Ubuntu 22.04.
+- Begin by provisioning an EC2 or Azure Virtual machine or Google Compute engine instance on AWS/Azure/GCP with Ubuntu 22.04.
 - Utilize SSH to establish a connection with the newly created instance.
 
 **Step 2: Clone the Code:**
 
 - Update all the packages and then clone the code.
-- Clone your application's code repository onto the EC2 instance:
+- Clone your application's code repository onto the EC2 or Azure Virtual machine or Google Compute engine instance:
   ```bash
   git clone https://github.com/eternalamit5/GitSecOps-AWS-K8-project
   ```
 
 **Step 3: Install Docker and Run the App Using a Container:**
 
-- Set up Docker on the EC2 instance:
+- Set up Docker on the EC2 or Azure Virtual machine or Google Compute engine instance:
 
   ```bash
 
@@ -63,7 +63,7 @@ docker build --build-arg TMDB_V3_API_KEY=<your-api-key> -t netflix .
 **Phase 2: Security**
 
 1. **Install SonarQube and Trivy:**
-   - Install SonarQube and Trivy on the EC2 instance to scan for vulnerabilities.
+   - Install SonarQube and Trivy on the EC2 or Azure Virtual machine or Google Compute engine instance to scan for vulnerabilities.
      sonarqube
      ```
      docker run -d --name sonar -p 9000:9000 sonarqube:lts-community
@@ -90,7 +90,7 @@ docker build --build-arg TMDB_V3_API_KEY=<your-api-key> -t netflix .
 
 1. **Install Jenkins for Automation:**
 
-   - Install Jenkins on the EC2 instance to automate deployment:
+   - Install Jenkins on the EC2 or Azure Virtual machine or Google Compute engine instance to automate deployment:
      Install Java
 
    ```bash
@@ -113,7 +113,7 @@ docker build --build-arg TMDB_V3_API_KEY=<your-api-key> -t netflix .
    sudo systemctl enable jenkins
    ```
 
-   - Access Jenkins in a web browser using the public IP of your EC2 instance.
+   - Access Jenkins in a web browser using the public IP of your EC2 or Azure Virtual machine or Google Compute engine instance.
      publicIp:8080
 
 2. **Install Necessary Plugins in Jenkins:**
@@ -723,4 +723,4 @@ To deploy an application with ArgoCD, you can follow these steps, which I'll out
 **Phase 7: Cleanup**
 
 1. **Cleanup AWS EC2 Instances:**
-   - Terminate AWS EC2 instances that are no longer needed.
+   - Terminate AWS/Azure/GCP EC2 or Azure Virtual machine or Google Compute engine instances that are no longer needed.
